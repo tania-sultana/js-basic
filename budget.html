@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <script>
+        const userName = "Taimur Rahman";
+        const income = 5000;
+        //expenses
+        let rent = 1200;
+        let food = 300;
+        let clothes = 100;
+        //total expenses
+        let totalExpenses = rent + food + clothes;
+        //tax
+        let tax = (income * 10) / 100;
+        //incomne after tax
+        let netIncome = income - tax;
+        //balance
+        let balance = netIncome - totalExpenses;
+       let savings = (balance * 20) / 100;
+    //    document.write('User Name : ' + userName);
+       document.write(`User : ${userName}`);
+       document.write("<br>");
+       document.write(`Total Expenses: $${totalExpenses}`);
+       document.write("<br>");
+       document.write("Tax: " + tax);
+       document.write("<br>");
+       document.write("Net Income: " + netIncome);
+       document.write("<br>");
+       document.write("Balance: " + balance);
+       document.write("<br>");
+       document.write("Savings: " + savings);
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><area shape="" coords="" href="" alt=""></title>
+</head>
+<body>
+    <script>
+        let base = parseFloat(prompt("Enter base: "));
+        let height = parseFloat(prompt("Enter height: "));
+
+        let farnheit = parseFloat(prompt("Enter farnheit: "));
+        let cels = (farnheit - 32) * (5/9);
+        document.write("Cels: " + cels);
+        document.write("<br>");
+        let cel = parseFloat(prompt("Enter cel: "));
+        let farnh = (cel * (9/5)) + 32;
+        document.write("farnh: " + farnh);
+        document.write("<br>");
+
+        base = parseInt(base,10);
+        height = parseInt(height,10);
+       
+       let square, rectangle, triangle;
+       square = base * base;
+       rectangle = base * height;
+       triangle = (base * height) / 2;
+       document.write("Square: " + square);
+       document.write("<br>");
+         document.write("Rectangle: " + rectangle);
+       document.write("<br>");
+         document.write("Triangle: " + triangle);
+       document.write("<br>");
+       document.write("<br>");
+
+
+       let a = 1;
+       let b = "1";
+       document.write(a == b);
+       document.write("<br>");
+       document.write(a === b);
+       document.write("<br>");
+       document.write("<br>");
+      
+    </script>
+    <script src="data-type.js"></script>
+</body>
+</html>

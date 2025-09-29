@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First</title>
+  </head>
+  <body>
+    <!-- typeof(123) -->
+    <!-- typeof anything inner in inspact cosole...we will sow input type srtring, number booleam etc -->
+    <script>
+      var name;
+      var age;
+      //  var name,age,phone,country;
+
+      name = "Taimur";
+      age = 20;
+      document.write(name);
+      document.write("<br>");
+      var firstName = "tanni";
+      document.write(firstName);
+      document.write("<br>");
+      document.write(age);
+      document.write("<br>");
+      // don't use var...use let and const
+      document.write("<br>");
+      document.write("<br>");
+      let phone = 01234567890;
+      document.write(phone);
+      document.write("<br>");
+      const country = "Bangladesh";
+      document.write(country);
+      // use let..variable value can change
+      // use const..variable value can't change
+
+      document.write("<br>");
+      document.write("Tan" + "ni");
+      document.write("<br>");
+      let num1 = 20;
+      let num2 = 30;
+      let total = num1 + num2;
+      document.write("Total: " + total + " my cost");
+      document.write("<br>");
+
+      let text = "I love my coutry";
+      let text1 = "Bangladesh";
+      len = text.length;
+      document.write(text1.length);
+      document.write("<br>");
+      document.write("Number of characters: " + len);
+
+      // let text5 = prompt("Enter your name:");
+      // document.write(text5);
+      document.write("<br>");
+      // document.write("Number of characters: " + text5.length);
+
+      let text3 = "Rajshahi";
+      document.write(text3.charAt(3));
+      document.write("<br>");
+      document.write(text3.toUpperCase());
+      document.write("<br>");
+
+      let text4 = " Rajshahi";
+      let text5 = " Dhaka";
+      document.write(text4.concat(text5));
+      document.write("<br>");
+
+      let text7 = "Pabna";
+      document.write(text7.slice(0, 3));
+
+      document.write("<br>");
+      document.write(5 + 2);
+      document.write("<br>");
+
+      document.write(5 - 2);
+      document.write("<br>");
+
+      document.write(5 * 2);
+      document.write("<br>");
+
+      document.write(5 / 2);
+      document.write("<br>");
+
+      document.write(5 % 2);
+      document.write("<br>");
+      document.write(5 ** 2);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      let a = 5;
+      let b = 8;
+      let c = 15;
+      document.write(a);
+      document.write("<br>");
+      document.write(a++);
+      document.write("<br>");
+      document.write(a);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(b);
+      document.write("<br>");
+      document.write(++b);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(c);
+      document.write("<br>");
+      document.write(c--);
+      document.write("<br>");
+      document.write(--c);
+      document.write("<br>");
+
+      document.write("<br>");
+      document.write("<br>");
+
+      let d = 5;
+      d += 2;
+      document.write(d);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+
+      //     let number1 = prompt("Enter first number1: ");
+      //     let number2 = prompt("Enter second number2: ");
+      //     number1 = parseInt(number1,10);
+      //     number2 = parseInt(number2,10);
+
+      //    let sum, sub;
+      //    sum = number1 + number2;
+      //    sub = number1 - number2;
+      //    document.write("Sum: " + sum);
+      //    document.write("<br>");
+      //    document.write("Sub: " + sub);
+      //    document.write("<br>");
+      //    document.write("<br>");
+
+      //    task
+      let n1 = prompt("Enter first number: ");
+      let n2 = prompt("Enter second number: ");
+      n1 = parseInt(n1, 10);
+      n2 = parseInt(n2, 10);
+
+      let sum, sub, mul, div;
+      sum = n1 + n2;
+      sub = n1 - n2;
+      mul = n1 * n2;
+      div = n1 / n2;
+      document.write(n1 + " + " + n2 + " = " + sum);
+      document.write("<br>");
+      document.write(n1 + " - " + n2 + " = " + sub);
+      document.write("<br>");
+      document.write(n1 + " * " + n2 + " = " + sub);
+      document.write("<br>");
+      document.write(n1 + " / " + n2 + " = " + div);
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+    <script src="data-type.js"></script>
+  </body>
+</html>
