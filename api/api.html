@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // localStorage.setItem("userName", "Tom");
+        // localStorage.setItem("password", "12345");
+        // const userName = localStorage.getItem("userName");
+        // const password = localStorage.getItem("password");
+        // console.log(userName, password);
+        // localStorage.removeItem("userName");
+
+         
+        //set item(key , value)
+        const countries = ["Finland", "Sweden", "Norway"];
+        localStorage.setItem("countries", JSON.stringify(countries));
+
+
+        //get item (key, value)
+        const countriesList = JSON.parse(localStorage.getItem("countries"));
+        
+        console.log(countriesList);
+        // localStorage.clear();
+       
+    </script>
+
+    <!-- <script src="local-storage.js"></script> -->
+</body>
+</html>
+
+

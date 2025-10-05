@@ -1,0 +1,42 @@
+{
+    "students" : [
+        {
+            "name": "Alice",
+            "middle_name": "null",
+            "age": 20,
+            "cgpa": 3.5,
+            "isRegistered": true,
+            "languages": ["English", "Spanish"],
+            "friends": [ 
+            {
+                "name": "Bob",
+                "age": 22
+            },
+            {
+                "name": "Charlie",
+                "age": 22
+            }
+        ]
+        },
+        {
+            "name": "Bipsa",
+            "middle_name": "null",
+            "age": 30,
+            "cgpa": 3.57,
+            "isRegistered": false,
+            "languages": ["English", "Spanish", "Hindi"],
+            "friends": [ 
+            {
+                "name": "Kob",
+                "age": 22
+            },
+            {
+                "name": "charlic",
+                "age": 22
+            }
+        ]
+        }
+        
+        
+    ]
+}

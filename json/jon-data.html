@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const data = require("./friends_data.json");
+        document.write(data);
+    </script> -->
+    
+
+
+
+
+    <ul id="users">
+
+    </ul>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+     <script>
+        axios.get('https://jsonplaceholder.typicode.com/users')
+        .then(function(res){
+            // document.write(res);
+            // console.log(res);
+            res.data.forEach(x => {
+                // console.log(x);
+                document.getElementById("users").innerHTML += '<li>' + x.name + '</li>';
+            });
+        })
+        .catch(function(err){
+            // document.write(err);
+            console.log(err);
+        })
+     </script>
+     <!-- <script>
+        axios.get('./friends_data.json')
+        .then(function(res){
+            // document.write(res);
+            console.log(res);
+        })
+        .catch(function(err){
+            // document.write(err);
+            console.log(err);
+        })
+     </script> -->
+</body>
+</html>

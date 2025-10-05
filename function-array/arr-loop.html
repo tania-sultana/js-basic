@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = [10, 20, 30, 40, 50];
+        let num = new Array();
+        for (let i = 0; i < 5; i++){
+            num[i] = parseInt(prompt("Enter a number :"));
+        }
+        let sum = 0;
+        for(let i = 0; i < num.length; i++){
+            document.write(num[i]);
+            document.write("<br>");
+            sum = sum + num[i];
+        }
+        document.write("<br>");
+            document.write(`Sum is : ${sum}`)
+    </script>
+</body>
+</html>

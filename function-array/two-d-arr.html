@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function heightRunScore(playerInfo)
+        {
+            let heightScore = playerInfo[0][1];
+            let name = playerInfo[0][0];
+            for(let i = 1; i < playerInfo.length; i++){
+                if(heightScore < playerInfo[i][1])
+                {
+                    heightScore = playerInfo[i][1];
+                    name = playerInfo[i][0];                    
+                }
+            }
+            return name;
+        }
+    var playerInfo = [
+        ["Tania", 20],
+        ["Anika", 122],
+        ["Mahi", 521],
+        ["Rafi", 23]
+    ];
+    let name = heightRunScore(playerInfo);
+    document.write(name);
+    // document.write(heightRunScore(playerInfo));
+    </script>
+</body>
+</html>

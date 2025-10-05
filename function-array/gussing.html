@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numOfWin = 0;
+        let numOfLose = 0;
+       for(let i = 0; i<5; i++)
+       {
+       let gussingNumber = parseInt(prompt("Enter a number between 1 to 5 :"));
+        let randomNumber = Math.floor(Math.random() * 5) + 1;
+        console.log(randomNumber);
+        if(gussingNumber == randomNumber){
+            // document.write("You win");
+            numOfWin++;
+        }
+        else{
+            // document.write("You lose");
+            numOfLose++;
+        }
+    }
+    document.write("<br>");
+    document.write(`Number of win : ${numOfWin}`);
+    document.write("<br>");
+    document.write(`Number of lose : ${numOfLose}`);    
+    </script>
+</body>
+</html>

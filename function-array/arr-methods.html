@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = ["square", "division", "add", "mul", "sub"];
+        for(let i = 0; i < name.length; i++){
+            document.write(name[i]);
+            document.write("<br>");
+        }
+        //shift method opposite of pop
+        name.shift();
+        document.write(name);
+        document.write("<br>");
+        //unshift method opposite of push
+        name.unshift("greater");
+        document.write(name);
+        document.write("<br>");
+        //splice method add or remove element from specific index
+        //add element
+        name.splice(2, 0, "lessthan", "greaterthan");
+        document.write(name);
+        document.write("<br>");
+        //remove element
+        name.splice(3, 2);
+        document.write(name);
+        document.write("<br>");
+        //slice method starting and ending point
+        let newArray  = name.slice(1, 4);
+        document.write(newArray);
+        document.write("<br>");
+        document.write(name);
+        document.write("<br>");
+        //sort method
+        let sortName = name.sort();
+        document.write(sortName);
+        document.write("<br>");
+        //reverse sort method
+        let revName = name.sort();
+        document.write(revName);
+        document.write("<br>");
+        name.reverse();
+        document.write(revName);
+        document.write("<br>");
+        //nmumber sort
+        let num = [100, 20, 3, 4000, 50];
+        let sortNum = num.sort(function(a,b){
+            return a-b;
+        });
+        document.write(sortNum);
+        document.write("<br>");
+        //reverse nmumber sort
+        let revNum = [100, 20, 3, 4000, 50];
+        let sortRevNum = revNum.sort(function(a,b){
+            return b-a;
+        });
+        document.write(sortRevNum);
+        document.write("<br>");
+    </script>
+</body>
+</html>

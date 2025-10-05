@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object create and print value
+      
+        let student = {
+            name: "Tania",
+            age: 22,
+            gpa: 3.5,
+            language: ["Bangla", "English", "Hindi"],
+        };
+        document.write(student.name);
+        document.write("<br>");
+        let student1 = {
+            name: "Anni",
+            age: 22,
+            gpa: 3.5,
+            language: ["Bangla", "English", "Hindi"],
+        };
+        document.write(student1.name);
+        document.write("<br>");
+
+
+
+
+
+
+        //wasy way to create object
+            //adding a constructor
+            //constructor
+            function Student(name , age, cgpa, lang)
+            {
+                this.name = name;
+                this.age = age;
+                this.cgpa = cgpa;
+                this.lang = lang;   
+
+                this.display = function(){
+                    document.write("<br>");
+                    document.write(this.name);
+                    document.write("<br>");
+                    document.write(this.age);
+                    document.write("<br>");
+                    document.write(this.cgpa);
+                    document.write("<br>");
+                    document.write(this.lang);
+                    document.write("<br>");
+                    document.write("<br>");
+                }
+            }
+            //constructor call or create conoscructor object
+            let student2 = new Student("Mira" , 22 , 3.5, ["Bangla", "English", "Hindi"]);
+            let student3 = new Student("Mahi", 22, 3.5, ["Bangla", "English", "Hindi"]);
+            let student4 = new Student("Munni", 22, 3.5, ["Bangla", "English", "Hindi"]);
+            let student5 = new Student("Maliha", 22, 3.5, ["Bangla", "English", "Hindi"]);
+            // document.write(student2.name);
+            // document.write("<br>");
+            // document.write(student5.name);
+            // document.write("<br>");
+            student2.display();
+            document.write("<br>");
+            student3.display();
+            document.write("<br>");
+        
+    </script>
+</body>
+</html>

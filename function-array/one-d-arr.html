@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function heightScore(scores){
+            document.write(scores);
+            let max = scores[0];
+            for(let i = 0; i < scores.length; i++){
+                if(max < scores[i]){
+                    max = scores[i];
+                }
+                
+            }
+             return max;
+
+        }
+        let scores = [100, 20, 30, 40, 50];
+        let maxScore = heightScore(scores);
+        document.write("<br>");
+        document.write(maxScore);
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const userName = prompt("Enter your name:");
+      const income = parseInt(prompt("Enter your income:"));
+      const numberOfExpenses = parseInt(prompt(" How many expenses do you have?"));
+      if(isNaN(income) || isNaN(numberOfExpenses) || income <= 0 || numberOfExpenses <= 0) {
+        Document.write("Invalid input. Please enter valid numbers.");
+      }
+      else{
+        let totalExpenses = 0;
+        for (let i = 1; i <= numberOfExpenses; i++) {
+          let expense = parseFloat(prompt(`Enter expense ${i}:`));
+          if(isNaN(expense) || expense <= 0) {
+            document.write(`Invalid input. for expense ${i}. setting it $0.`);
+            expense = 0;
+           
+          }
+          totalExpenses += expense;
+        }
+      let tax = (income * 10) / 100;
+        //incomne after tax
+        let netIncome = income - tax;
+        //balance
+        let balance = netIncome - totalExpenses;
+       let savings = (balance * 20) / 100;
+       document.write(`User : ${userName}`);
+       document.write("<br>");
+       document.write(`Total Expenses: $${totalExpenses}`);
+       document.write("<br>");
+       document.write("Tax: " + tax);
+       document.write("<br>");
+       document.write("Net Income: " + netIncome);
+       document.write("<br>");
+       document.write("Balance: " + balance);
+       document.write("<br>");
+       document.write("Savings: " + savings);
+        document.write("<br>");
+       
+       if(savings >= 1000)
+        document.write("Excellent");
+        else if (savings >= 500 && savings < 1000)
+        document.write("Good");
+        else if (savings >= 100 && savings < 500)
+        document.write("Needs Improvement");
+        else 
+        document.write("Critical! Your savings are too low!");
+    document.write("<br>");
+
+        let overspendingMessage = "";
+        if(totalExpenses > income)
+        overspendingMessage = "Warning: You are spending more than your income!";
+       document.write(overspendingMessage);
+      }
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

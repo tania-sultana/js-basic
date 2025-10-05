@@ -26,3 +26,7 @@
         console.log('Income:' + income);
         console.log('Expense:' + expense);
         console.log('Balance:' + (income - expense));
+
+
+
+        console.log(!ture);

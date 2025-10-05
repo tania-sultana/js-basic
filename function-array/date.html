@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date = new Date();
+        document.write(date);
+        document.write("<br>");
+        let year = date.getFullYear();
+        document.write(`Year : ${year}`);
+        // document.write(year);
+        document.write("<br>");
+        let month = date.getMonth() + 1;
+        document.write(`Month : ${month}`);
+        document.write("<br>");
+        let day = date.getDate();
+        document.write(`Day : ${day}`);
+        document.write("<br>");
+        let hours = date.getHours();
+        document.write(`Hours : ${hours}`);
+        document.write("<br>");
+        let minutes = date.getMinutes();
+        document.write(`Minutes : ${minutes}`);
+        document.write("<br>");
+        let seconds = date.getSeconds();
+        document.write(`Seconds : ${seconds}`);
+        document.write("<br>");
+        let time = date.getTime();
+        document.write(`Time : ${time}`);
+        document.write("<br>");
+        let fullDate = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+        document.write(`Full Date : ${fullDate}`);
+    </script>
+</body>
+</html>
