@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol class="students-list">
+      <li class="student-a">Stu A</li>
+      <li class="student-b">Stu B</li>
+      <li class="student-c">Stu C</li>
+    </ol>
+
+    <script>
+      const studentsList = document.querySelector(".students-list");
+    //   const studentA = studentsList.querySelector(".student-a");
+    //   document.write(studentA.innerText);
+    //     document.write("<br/>");
+        // const studentA = studentsList.children[1];
+        // document.write(studentC.innerText);
+        // document.write("<br/>");
+
+        const studentA = document.querySelector("li");
+//parent element
+        // const studentsList = studentA.parentElement;
+        // document.write(studentsList.className);
+//next element sibling
+        const studentB = studentA.nextElementSibling;
+        document.write(studentB.innerText);
+        document.write("<br/>");
+        const studentC = studentB.nextElementSibling;
+        document.write(studentC.innerText);
+        document.write("<br/>");
+//previous element sibling
+        // const studentC = document.querySelectorAll("li")[2];
+        // const studentB = studentC.previousElementSibling;
+        // document.write(studentB.innerText);
+        // document.write("<br/>");
+    </script>
+    <!-- <script src="traversing.js"></script> -->
+  </body>
+</html>
