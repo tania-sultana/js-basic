@@ -19,12 +19,18 @@
 //     console.log("Thanks for watching");
 // });
 
-window.addEventListener('scroll', function () {
-    console.log("scroll");
-});
-window.addEventListener('resize', function () {
-    console.log("resize");
-});
+
+
+
+// window.addEventListener('scroll', function () {
+//     console.log("scroll");
+// });
+// window.addEventListener('resize', function () {
+//     // console.log("resize");
+//     const width = window.outerWidth;
+//     const height = window.outerHeight;
+//     console.log(`height:${height}, width:${width}`);
+// });
 
 
 
@@ -39,3 +45,11 @@ window.addEventListener('resize', function () {
 // vdo.addEventListener("unload", function () {
 //     console.log("unload");
 // });
+
+
+
+
+const details = document.querySelector('details');
+details.addEventListener("toggle", function (e) {
+    console.log(e.target.open);
+})
