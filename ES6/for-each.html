@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ////for loop
+        let numbers = [10,20,30,40,50];
+        for(var x=0; x<numbers.length; x++){
+            document.write(numbers[x] + "<br>");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+
+
+        // ////for each loop
+        // // let numbers1 = [10,20,30,40,50];
+        // // numbers1.forEach(myFunction)
+        // // function myFunction(x)
+        // // {
+        // //     document.write(x + "<br>");
+        // // }
+        // let numbers1 = [10,20,30,40,50];
+        // let squareNum = [];
+        // numbers1.forEach(function(x){
+        //     // document.write(x +  "<br>");
+        //     squareNum.push(x*x);
+        // })
+        // document.write(squareNum );
+         //// map method
+        // let numbers4 = [10,20,30,40,50];
+        // let squareNum4 = numbers4.map(function(x){
+        //     return x*x;
+        // })
+        // document.write(squareNum4);
+         //// filter method
+        let numbers4 = [10,20,30,40,50];
+        let squareNum4 = numbers4.filter(function(x){
+            return x>25;
+        })
+        document.write(squareNum4);
+
+
+        ////multiple element forEach
+        // var numbers2 = [10,20,30,40,50];
+       
+        // numbers2.forEach(function(x, index, arr){
+        //   arr[index] = x+5;
+        //   document.write(arr[index] + "<br>");
+        // })
+
+
+       
+    </script>
+</body>
+</html>

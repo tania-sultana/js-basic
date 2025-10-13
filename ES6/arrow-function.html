@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // normal function
+        function display(){document.write("I am display function");}
+        display();
+        document.write("<br>"); 
+
+        function msg1(){
+            return "I am msg1 message1";
+        }
+        document.write(msg1());
+        document.write("<br>");
+
+        document.write("<br>");
+
+
+        
+        // arrow function....single line a bracket na dileo hoy
+        let display1 = () => document.write("I am display1 function");
+        display1();
+        document.write("<br>");
+        
+        let msg2 = () => "Hi I am msg2";
+        document.write(msg2());
+        document.write("<br>");
+
+        const add = (num1, num2) => num1 + num2;
+        document.write(add(5, 6));
+        document.write("<br>");
+
+// let display1 = () => {document.write("I am display1 function");}
+    </script>
+</body>
+</html>

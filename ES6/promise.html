@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <!-- <script>
+
+        document.write("welcome")
+        document.write("<br>");
+        // create promise -pending, resolve, reject
+        const promise1 = new Promise((resolve, reject) => {
+            let completedPromise = false;
+            // let completedPromise = true;
+            if(completedPromise)
+        {
+            resolve("success");
+        }
+        else
+        {
+            reject("failed");
+           
+        }
+        });
+        const promise2 = new Promise((resolve, reject) => {
+            // let completedPromise = false;
+            let completedPromise = true;
+            if(completedPromise)
+        {
+            resolve("success promise2");
+        }
+        else
+        {
+            reject("failed promise1");
+           
+        }
+        });
+        
+        // promise1.then(res =>   {
+        //     document.write(res);
+        // })
+        // .catch(err => {
+        //     document.write(err);
+        // });
+        document.write("end");
+        document.write("<br>");
+    </script> -->
+
+
+    <script>
+        const promise1 = new Promise((resolve, reject) => {
+    let completedPromise = true; // Set to false to reject
+    if (completedPromise) {
+        resolve("success promise1  <br>");
+    } else {
+        reject("failed");
+    }
+});
+
+const promise2 = new Promise((resolve, reject) => {
+    let completedPromise = true; // Set to true to resolve
+    if (completedPromise) {
+        resolve("success promise2");
+    } else {
+        reject("failed promise2");
+    }
+});
+
+// // Using Promise.all to handle both promises
+// Promise.all([promise1, promise2])
+//     .then(([res1, res2]) => {
+//         document.write(res1, res2); // This will not run if either promise is rejected
+//         document.write("<br>");
+//     })
+//     .catch((error) => {
+//         document.write("One of the promises failed:", error); // Catch block will handle the rejection
+//         document.write("<br>");
+//     });
+Promise.race([promise1, promise2])
+    .then((res) => {
+        document.write(res); // This will not run if either promise is rejected
+        document.write("<br>");
+    })
+    .catch((error) => {
+        document.write("One of the promises failed:", error); // Catch block will handle the rejection
+        document.write("<br>");
+    });
+
+    </script>
+</body>
+</html>

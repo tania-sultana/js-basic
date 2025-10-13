@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(id, name){
+                this.id = id;
+                this.name = name;
+            }
+            set StudentName(name){
+                this.name = name;
+            }
+            get StudentInfo(){
+                return this.id + " " + this.name;
+            }
+        }
+        let s1 = new Student(101, "Tani");
+        document.write(`ID : ${s1.id}, Name : ${s1.name}`);
+        document.write("<br>");
+        document.write(`ID : ${s1.id}`);
+        document.write("<br>");
+        document.write(`Name : ${s1.name}`);
+        document.write("<br>");
+        s1.StudentName = "Nila";
+        document.write(`Name : ${s1.name}`);
+        document.write("<br>");
+        document.write(`Info : ${s1.StudentInfo}`);
+
+        
+    </script>
+  <script type="module" src="es6ModuleClass.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array destructuring
+        let numbers = [10,20,30,40];
+        let [num1, num2, num3, num4] = numbers;
+        document.write(num1 + "<br>");
+        document.write(num2 + "<br>");
+        document.write(num3 + "<br>");
+        document.write(num4 + "<br>");
+
+document.write("<br>");
+// spread destructuring
+        let arr = [10,20,30,40];
+        let [n1, n2, ...z] = arr;
+        document.write(n1 + "<br>");
+        document.write(z + "<br>");
+    
+  document.write("<br>");
+        //swap destructuring
+        let a =10, b= 20;
+        [a,b] = [b,a];
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+
+        document.write("<br>");
+        // object destructuring
+        const studentInfo ={
+            name: "Rahim",
+            age: 20,
+            address: "Dhaka"
+        }
+        const {name, address} = studentInfo;
+        document.write(name + "<br>");
+        document.write(studentInfo.age + "<br>");
+        document.write(address + "<br>");
+
+
+    document.write("<br>");
+        //nested object destructuring
+        const studentInfo2 ={
+            id : 101,
+            fullName: "Rahim",
+            gpa:3.42,
+            language: {
+                first: "English",
+                second: "Bangla"
+            }
+        }
+        const {fullName, language} = studentInfo2
+        document.write(fullName + "<br>");
+        document.write(language.first + "<br>");
+        document.write(language.second + "<br>");
+       
+document.write("<br>");
+       //destructuring function parameter
+       const studentInfo3 = ({id, fullName}) => {
+        document.write(`${id}, ${fullName}`)
+       }
+       const student = {
+        id : 101,
+        fullName: "Rahim"
+       }
+      studentInfo3(student);
+     
+    </script>
+</body>
+</html>

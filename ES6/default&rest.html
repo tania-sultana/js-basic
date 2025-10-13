@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strick"
+        function message(){
+            document.write("Hello World <br>");
+        }
+        //default parameter
+        function msg(text = "Hello this is default parameter"){
+            document.write(text + "<br>");
+        }
+        message();
+        msg("Hello");
+         msg();
+
+//rest parameter
+         function printNum(x,y,...z){
+            document.write(`x = ${x}, y = ${y}, z = ${z}`);
+         }
+         printNum(10, 20, 30 , 40 , 50 , 60);
+    </script>
+</body>
+</html>

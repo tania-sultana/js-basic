@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const task1 = () => {
+            document.write("Task1");
+            document.write("<br>");
+            
+        }
+        const dataloading = () => {
+            document.write("Task2 Data loading");
+            document.write("<br>");
+        }
+        const task2 = () => {
+            setTimeout(dataloading, 2000);
+          
+           
+        }
+        const task3 = () => {
+            document.write("Task3");
+            document.write("<br>");
+        }
+        task1();
+        task2();
+        task3();
+    </script>
+</body>
+</html>

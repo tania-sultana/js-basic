@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array find
+        let numbers = [5,13,27,30,40,50];
+       let firstEvenNumber = numbers.find(x => x%2===0);
+       document.write(firstEvenNumber);
+       document.write("<br>");
+
+//another process
+//array find and findIndex
+        let numbers1 = [5,11,25,30,40,50];
+        const evenNumber1 = (value, index, array) => {
+            if(value%2===0){
+                return value;
+            }
+        }
+       let firstEvenNumber1 = numbers1.find(evenNumber1);
+       let firstEvenNumber1Index = numbers1.findIndex(evenNumber1);
+       document.write(firstEvenNumber1);
+       document.write("<br>");
+       document.write(firstEvenNumber1Index);
+       document.write("<br>");
+        document.write("<br>");
+
+
+
+       //object find and findIndex
+       const students = [
+          {
+            id : 101,
+            gpa : 2.5
+          },
+          {
+            id : 102,
+            gpa : 3.5
+          },
+          {
+            id : 103,
+            gpa : 4.95
+          },
+          {
+            id : 104,
+            gpa : 3.55
+          },
+
+       ]
+
+    //        const stu1 = (value) => {
+    //         if(value.gpa > 4){
+    //             return value;
+    //         }
+    //     }
+    //     let firstGpa = students.find(stu1);
+    //     document.write(firstGpa);
+    //    document.write("<br>");
+    //     let firstGpaIndex = students.findIndex(stu1);
+    //     document.write(firstGpaIndex);
+    //    document.write("<br>");
+
+
+          console.log(students.find(x => x.gpa > 4));
+        //   document.write(students.find(x => x.gpa > 4));
+          document.write("<br>");
+          document.write(students.findIndex(x => x.gpa > 3.5));
+    </script>
+</body>
+</html>
